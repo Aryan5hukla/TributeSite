@@ -35,7 +35,7 @@ function App() {
 
   useGSAP(()=>{
     if(!showContent) return ;
-    // const isMobile = window.innerWidth < 768;
+    
     gsap.to(".main" , {
       scale : 1 ,
       rotate : 0 ,
@@ -57,14 +57,25 @@ function App() {
       delay : -0.8 ,
       ease : "Expo.easeInOut" ,
     })
-    gsap.to(".character" , {
+    // console.log(window.innerWidth) ;
+    if(window.innerWidth > 768)
+    {gsap.to(".character" , {
       scale : 0.9 ,
       rotate : 0 ,
       bottom : "-10%" ,
       duration : 2 ,
       delay : "-1" ,
       ease : "Expo.easeInOut" ,
-    })
+    })} else {
+      gsap.to(".character" , {
+        scale : 2 ,
+        rotate : 0 ,
+        bottom : "10%" ,
+        duration : 2 ,
+        delay : "-1" ,
+        ease : "Expo.easeInOut" ,
+      })
+    }
     gsap.to(".text" , {
       scale : 1 ,
       rotate : 0 ,
@@ -72,16 +83,6 @@ function App() {
       delay : "-0.8" ,
       ease : "Expo.easeInOut" ,
     })
-    // window.addEventListener("resize", () => {
-    //   gsap.to(".character" , {
-    //     scale : isMobile? 0.9 : 1.8 ,
-    //     rotate : 0 ,
-    //     bottom :isMobile? "-10%" : "8%",
-    //     duration : 2 ,
-    //     delay : "-1" ,
-    //     ease : "Expo.easeInOut" ,
-    //   })
-    // });
     
     const main = document.querySelector(".main");
 
@@ -170,7 +171,7 @@ function App() {
                 <h1 className='md:text-[7rem] text-8xl leading-none -ml-20'>Forces</h1>
               </div>
               <img
-                className='girl character absolute scale-[1.2] md:scale-[3] rotate-[-20deg] bottom-40 md:-bottom-[170%] left-0' 
+                className='girl character  absolute scale-[1.2] md:scale-[3] rotate-[-20deg] bottom-40 md:-bottom-[170%] left-0' 
                 src="./armed.png" 
                 alt="" 
               />
@@ -187,7 +188,7 @@ function App() {
 
           <div className='w-full h-full md:h-screen pb-20  md:pb-4 md:pt-10 px-15 flex items-center justify-center bg-black'>
             <div className='cntnr justify-center w-full h-[90%] flex md:flex-row flex-col text-white overflow-hidden '>
-              <div className='limg flex justify-center relative md:w-[50%] h-full'>
+              <div className='limg flex mt-10 mb-5 justify-center relative md:w-[50%] h-full'>
                 <img className='scale-[0.85] md:absolute  md:-top-0 left-0 ' src="/img.png" alt="" />
               </div>
               <div className='rg w-full md:w-[50%] md:pr-8'>
