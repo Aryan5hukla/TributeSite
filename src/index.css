@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: "pricedown";
+  src: url("/pricedown.otf");
+}
+
+@font-face {
+  font-family: "samarkan";
+  src: url("/samarkan.ttf");
+}
+
+html , body {
+  width: 100%;
+  height: 100%;
+  font-family: "pricedown" , sans-serif;
+}
+
+.hero {
+  font-family: "samarkan" , sans-serif;
+}
