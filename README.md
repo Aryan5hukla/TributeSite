@@ -1,12 +1,27 @@
-# React + Vite
+# A Tribute 🇮🇳
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A heartfelt and visually engaging tribute to the Indian Armed Forces for their valor and sacrifice during **Operation Sindoor**. This React + GSAP powered web experience honors the brave soldiers who laid down their lives to protect our nation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Key Features
 
-## Expanding the ESLint configuration
+✅ Interactive SVG Mask Animation – Dynamic opening sequence using GSAP animations.
+✅ Armed Forces Showcase – Visually rich tribute featuring Army, Navy, and Air Force.
+✅ Responsive Design – Works beautifully across mobile and desktop devices.
+✅ Tribute Paragraphs – Emotionally resonant text honoring the fallen heroes.
+✅ Scroll Animation Effects – Smooth visual transitions and hover movement based on cursor tracking.
+✅ Clean Component-Based Code – Built with modern React practices for easy maintenance and expansion.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+* **React.js** (Hooks: `useState`, `useEffect`, `useGSAP`)
+* **GSAP** (GreenSock Animation Platform for smooth, controlled animations)
+* **Tailwind CSS** (Utility-first styling for a sleek, responsive UI)
+* **Remix Icons** (For modern iconography)
+
+---
+
+**🇮🇳 Jai Hind. This tribute is dedicated to every soldier who gave their today for our tomorrow.**
