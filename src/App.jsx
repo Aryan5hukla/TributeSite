@@ -35,7 +35,7 @@ function App() {
 
   useGSAP(()=>{
     if(!showContent) return ;
-    const isMobile = window.innerWidth < 768;
+    // const isMobile = window.innerWidth < 768;
     gsap.to(".main" , {
       scale : 1 ,
       rotate : 0 ,
